@@ -1,0 +1,1 @@
+console.log("Hello, welcome to the CI/CD demo application!");
