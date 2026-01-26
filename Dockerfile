@@ -1,5 +1,5 @@
 #Use official Node.js image
-FROM node:current-alpine3.23
+FROM node:20-alpine
 # Set working directory
 WORKDIR /usr/src/app
 # Copy package files
