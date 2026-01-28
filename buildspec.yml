@@ -19,6 +19,9 @@ phases:
   post_build:
     commands:
       - echo "Build completed on" $(date)
+      - echo "DEBUG: REPOSITORY_URI=$REPOSITORY_URI"
+      - echo "DEBUG: IMAGE_TAG=$IMAGE_TAG"
+      - docker images
       - echo "Pushing the Docker image to ECR..."
       - docker push $REPOSITORY_URI:$IMAGE_TAG
       - echo "Writing image definition file..."
