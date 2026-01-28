@@ -1,5 +1,5 @@
 #Use official Node.js image
-FROM node:18-alpine
+FROM public.ecr.aws/nodejs/node:20-alpine
 # Set working directory
 WORKDIR /usr/src/app
 # Copy package files
