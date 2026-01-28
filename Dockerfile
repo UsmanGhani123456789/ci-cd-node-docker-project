@@ -3,7 +3,7 @@ FROM node:20-alpine
 # Set working directory
 WORKDIR /usr/src/app
 # Copy package files
-COPY package*.json ./
+COPY package.json ./
 # Install dependencies
 RUN npm install
 # Copy source code
