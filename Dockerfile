@@ -1,5 +1,5 @@
 #Use official Node.js image
-FROM public.ecr.aws/docker/library/node:20-alpine
+FROM public.ecr.aws/docker/library/node:18-alpine
 # Set working directory
 WORKDIR /usr/src/app
 # Copy package files
